@@ -1,0 +1,11 @@
+[Unit]
+Description=Restart ikuai service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=bash /root/restartikuai.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
